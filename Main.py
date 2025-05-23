@@ -40,7 +40,7 @@ async def sendmessage ( update : Update , context:ContextTypes.DEFAULT_TYPE) -> 
         current = datetime.datetime.now().strftime('%H:%M:%S')
         await context.bot.send_message(chat_id=channel_id,text="\n".join(prices)+"\n\n" + current)
         await update.message.reply_text("پیام ارسال شد !")
-        await asyncio.sleep(120)
+        await asyncio.sleep(300)
     
 
 
